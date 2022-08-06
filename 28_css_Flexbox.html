@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        body {
+            background-color: rgb(255 8 236);
+        }
+
+        .navbar {
+            border: 5px double rgb(147, 233, 147);
+            border-radius: 5px;
+            background-color: rgb(49, 12, 85);
+            width: 80%;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .navItems {
+            display: inline;
+            border: 1px solid black;
+            background-color: rgb(240, 255, 241);
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .navItems:hover {
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+
+        .container {
+            height: 700px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            /* flex-direction: row; (default)*/
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse;  */
+
+            /* flex-wrap: nowrap;  (Default)*/
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+        }
+
+        .item {
+            height: 100px;
+            width: 120px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            font-size: 20px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #item-2 {
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 5; */
+            /* flex-basis: 200px; */
+            /* flex: 2 2 300px; ->flex-grow, shrink, basis (short hand)*/
+        }
+
+        #item-3 {
+            /* order: 1; */
+            /* flex-grow: 5; */
+            /* flex-shrink: 2; */
+            /* flex: 1 1 100px; */
+            /* align-self: center; */
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navItems" id="nav1">Home</div>
+        <div class="navItems" id="nav2">Views</div>
+        <div class="navItems" id="nav3">History</div>
+        <div class="navItems" id="nav4">Security</div>
+        <div class="navItems" id="nav5">Contact Us</div>
+        <div class="navItems" id="nav6">T & C</div>
+    </div>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+
+</html>

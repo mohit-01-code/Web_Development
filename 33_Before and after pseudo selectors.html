@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: 'Luxurious Roman', cursive;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .nav-list {
+            display: flex;
+        }
+
+        .nav-items {
+            list-style: none;
+            margin: 10px 30px;
+        }
+
+        .nav-items:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 40px auto;
+            width: 85vw;
+            height: 80vh;
+        }
+
+        /* section::after{
+            content: 'I am content';
+        } */
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-items">Home</li>
+                <li class="nav-items">Menu</li>
+                <li class="nav-items">Contact us</li>
+                <li class="nav-items">About us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed est libero consequatur deleniti!
+            Labore molestias dolores distinctio debitis minima similique minus architecto autem fuga itaque accusamus
+            esse odio voluptatibus nemo accusantium, consequatur corporis molestiae maxime? Harum, magnam. Nemo,
+            inventore?</p>
+    </section>
+</body>
+
+</html>

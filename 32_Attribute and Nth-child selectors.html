@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and Nth-child Pseudo selectors</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 98vh;
+        }
+
+        .li_container {
+            width: 10vw;
+            border: 1px solid black;
+            background-color: brown;
+            padding: 5px;
+        }
+
+        /* Attribute Selector */
+        ul li[type='none'] {
+            font-style: italic;
+        }
+
+        a[target='_self'] {
+            font-style: italic;
+        }
+
+        /* Nth-child selector */
+        ul li:nth-child(3) {
+            background-color: blue;
+        }
+
+        ul li:nth-child(3n+1) {
+            background-color: aliceblue;
+        }
+
+        ol li:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><a href="http://google.com" target="_blank">Google...</a></h2>
+        <h2><a href="http://facebook.com" target="_self">Facebook...</a></h2>
+        <span class="li_container">
+            <ul class="u-list">
+                <li type="none" class="u_item" id="u_item-1">Item-1</li>
+                <li type="none" class="u_item" id="u_item-2">Item-2</li>
+                <li class="u_item" id="u_item-3">Item-3</li>
+                <li class="u_item" id="u_item-4">Item-4</li>
+                <li class="u_item" id="u_item-5">Item-5</li>
+                <li class="u_item" id="u_item-6">Item-6</li>
+                <li class="u_item" id="u_item-7">Item-7</li>
+                <li class="u_item" id="u_item-8">Item-8</li>
+                <li class="u_item" id="u_item-9">Item-9</li>
+                <li class="u_item" id="u_item-10">Item-10</li>
+            </ul>
+        </span>
+        <span class="li_container">
+            <ol class="o-list">
+                <li class="o_item" id="o_item-1">Item-1</li>
+                <li class="o_item" id="o_item-2">Item-2</li>
+                <li type="none" class="o_item" id="o_item-3">Item-3</li>
+                <li class="o_item" id="o_item-4">Item-4</li>
+                <li class="o_item" id="o_item-5">Item-5</li>
+                <li class="o_item" id="o_item-6">Item-6</li>
+                <li class="o_item" id="o_item-7">Item-7</li>
+                <li class="o_item" id="o_item-8">Item-8</li>
+                <li class="o_item" id="o_item-9">Item-9</li>
+                <li class="o_item" id="o_item-10">Item-10</li>
+            </ol>
+        </span>
+    </div>
+</body>
+
+</html>

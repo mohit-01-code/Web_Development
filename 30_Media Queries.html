@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .device {
+            border: 2px double white;
+            border-radius: 30px;
+            width: 100%;
+            height: 98vh;
+            font-size: 15vw;
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:281px) {
+            #device-11 {
+                display: block;
+            }
+        }
+
+        @media (min-width:281px) and (max-width:361px) {
+            #device-5 {
+                /*Samsung galaxy s8+/A51/71 */
+                display: block;
+            }
+        }
+
+        @media (min-width:361px) and (max-width:375px) {
+            #device-1 {
+                display: block;
+            }
+        }
+
+        @media (min-width:375px) and (max-width:391px) {
+            #device-3 {
+                display: block;
+            }
+        }
+
+        @media (min-width:391px) and (max-width:394px) {
+            #device-4 {
+                display: block;
+            }
+        }
+
+        @media (min-width:394px) and (max-width:413px) {
+            #device-6 {
+                /*Samsung galaxy s20 ultra*/
+                display: block;
+            }
+        }
+
+        @media (min-width:413px) and (max-width:415px) {
+            #device-2 {
+                display: block;
+            }
+        }
+
+        @media (min-width:415px) and (max-width:541px) {
+            #device-10 {
+                display: block;
+            }
+        }
+
+        @media (min-width:541px) and (max-width:769px) {
+            #device-8 {
+                display: block;
+            }
+        }
+
+        @media (min-width:769px) and (max-width:821px) {
+            #device-7 {
+                display: block;
+            }
+        }
+
+        @media (min-width:821px) and (max-width:913px) {
+            #device-9 {
+                display: block;
+            }
+        }
+
+        @media (min-width:821px) and (max-width:1025px) {
+            #device-12 {
+                display: block;
+            }
+        }
+
+        @media (min-width:1025px) {
+            #device-13 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="device" id="device-1">iPhone SE</div>
+    <div class="device" id="device-2">iPhone XR</div>
+    <div class="device" id="device-3">iPhone 12 pro</div>
+    <div class="device" id="device-4">pixel 5</div>
+    <div class="device" id="device-5">Samsung galaxy s8+</div>
+    <div class="device" id="device-6">Samsung galaxy s20 ultra/A51/71</div>
+    <div class="device" id="device-7">iPad Air</div>
+    <div class="device" id="device-8">iPad Mini</div>
+    <div class="device" id="device-9">Surface pro 7</div>
+    <div class="device" id="device-10">Surface Duo</div>
+    <div class="device" id="device-11">Galaxy fold</div>
+    <div class="device" id="device-12">Nest hub</div>
+    <div class="device" id="device-13">Nest hub Max</div>
+</body>
+
+</html>

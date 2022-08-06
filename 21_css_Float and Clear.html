@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear in CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: aliceblue;
+            width: 1100px;
+            margin: 12px auto;
+        }
+
+        h1 {
+            width: 350px;
+            margin: 24px auto;
+            border: 1px solid black;
+        }
+
+        .divblock {
+            border: 2px solid red;
+            background-color: rgb(195, 221, 221);
+            margin: 12px auto;
+            padding: 21px 16px;
+            width: 500px;
+        }
+
+        #divBlockId1 {
+            float: left;
+            margin: 12px 12px;
+        }
+
+        #divBlockId2 {
+            float: right;
+            margin: 12px 12px;
+        }
+
+        #divBlockId3 {
+            margin: 12px 12px;
+            width: auto;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Float and Clear in CSS</h1>
+
+        <div class="divblock" id="divBlockId1">
+            <h4>Paragraph 1</h4>
+            <p class="paraBlocks" id="paraId1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, numquam
+                velit libero molestias facere in ducimus molestiae vel, similique cumque quia temporibus sequi sit
+                dolorum? Officia at perspiciatis labore placeat vero neque eveniet odit cumque!</p>
+        </div>
+
+        <div class="divblock" id="divBlockId2">
+            <h4>Paragraph 2</h4>
+            <p class="paraBlocks" id="paraId2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in ad
+                suscipit libero sunt pariatur quae aspernatur repudiandae sequi ducimus placeat ipsum nemo vitae rerum
+                officiis, iste architecto hic! Autem repellendus porro quia reprehenderit sunt soluta doloremque unde
+                eius esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore aperiam expedita sapiente
+                atque. Veniam, dolore quos. Ea eligendi non aliquid obcaecati magni? Ut mollitia magni ratione,
+                obcaecati tenetur quas veritatis alias quaerat, voluptatem sed nesciunt?</p>
+        </div>
+
+        <div class="divblock" id="divBlockId3">
+            <h4>Paragraph 3</h4>
+            <p class="paraBlocks" id="paraId3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem veniam
+                odio consectetur saepe doloribus quia omnis ab rem. Voluptates magni beatae recusandae officia.
+                Exercitationem dolorum atque beatae aliquam quis reprehenderit facere rerum totam est asperiores!</p>
+        </div>
+    </div>
+</body>
+
+</html>

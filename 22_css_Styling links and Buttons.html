@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links and Buttons</title>
+    <style>
+        .container {
+            border: 2px solid grey;
+            background-color: honeydew;
+            padding: 12px 12px;
+        }
+
+        #link a:visited {
+            background-color: black;
+            color: white;
+            border: 5px solid green;
+        }
+
+        #link a {
+            background-color: grey;
+            color: rgb(212, 222, 228);
+            padding: 3px 5px;
+            border: 2px solid red;
+            margin: 5px;
+            text-decoration: none
+        }
+
+        #link a:hover {
+            background-color: rgb(253, 236, 236);
+            color: blue;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        #link a:active {
+            font-size: smaller;
+        }
+
+
+        #btn input {
+            background-color: green;
+            color: white;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 4px 8px;
+            margin: 5px;
+        }
+
+        #btn input:hover {
+            background-color: rgb(235, 252, 217);
+            color: black;
+            font-size: large;
+        }
+
+        #btn input:active {
+            font-size: smaller;
+        }
+
+        #btn input:visited {
+            background-color: black;
+            color: white;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Links and Buttons</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero explicabo neque quis nobis esse consequuntur
+            repellendus optio et asperiores cumque blanditiis, laborum totam, sapiente labore id, cum harum in
+            cupiditate ipsum dolore molestias facilis deleniti illo nostrum. Quo quidem fuga, deleniti fugit maiores,
+            officia alias veniam tempore mollitia, exercitationem eius.</p>
+
+        <span id="link">
+            <a href="https://instagram.com" target="_blank">Google</a>
+        </span>
+        <span id="btn">
+            <input type="button" value="Finish">
+        </span>
+    </div>
+</body>
+
+</html>

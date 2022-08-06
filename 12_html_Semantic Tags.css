@@ -1,0 +1,97 @@
+header {
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: antiquewhite;
+    text-align: end;
+    margin: 15px;
+    padding: 10px;
+}
+
+.navi {
+    background-color: aqua;
+    margin: 150px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+select {
+    background-color: azure;
+    margin: 5px;
+}
+
+input {
+    background-color: beige;
+    margin: 5px;
+}
+
+form {
+    background-color: bisque;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    width: 530px;
+    height: 300px;
+    padding: 20px;
+}
+
+section {
+    background-color: burlywood;
+    width: 50%;
+    float: left;
+    vertical-align: top;
+}
+
+aside {
+    background-color: darkcyan;
+    width: 48%;
+    height: 986px;
+    float: right;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.MyForm {
+    background-color: darkgray;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 96%;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#signIn{
+    height: 40%;
+    width: 87%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+.logo{
+    height:40px;
+    width: 70px;
+}
+main {
+    background-color: thistle;
+    width: 50%;
+    float: left;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+article{
+    background-color: slategray;
+    margin: 2px;
+}
+footer{
+    background-color: #997290;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -1200px;
+}

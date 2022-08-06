@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* Example-1 : Any P tag inside any Div tag at anylevel of hierarchy */
+        div p {
+            background-color: aliceblue;
+        }
+
+        /* Example-2 : if p is inside any li which is inside any div */
+        div li p {
+            background-color: antiquewhite;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* example-3 : if a is right inside span i.e, Any a tag which is direct child of any span tag */
+        span>a {
+            border: 2px dotted red;
+            background-color: cadetblue;
+            color: black;
+        }
+
+        /* Example-4 : if a is right after span tag i.e, a is the next sibling of span tag */
+        span+a {
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Example-1 : Any P tag inside any Div tag at anylevel of hierarchy -->
+    <div>
+        <span>
+            <h1>i am heading</h1>
+            <p>i am paragraph...</p>
+        </span>
+    </div>
+    <hr>
+    <div>
+        <ul>
+            <li>
+                <p>I am para inside li...</p>
+            </li>
+        </ul>
+        <a href="http://facebook.com">Go to Facebook...</a>
+    </div>
+    <hr>
+    <span>
+        <a href="http://google.com">Go to Google</a>
+    </span>
+    <hr>
+    <div>
+        <span> I am Span tag...</span>
+        <a href="#">I am anchor(a) tag right after the span tag...</a>
+    </div>
+</body>
+
+</html>

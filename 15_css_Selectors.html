@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        span {
+            /* Element selector */
+            border: 3px solid green;
+        }
+
+        #paraId {
+            /* Id selector */
+            font-style: italic;
+        }
+
+        .paraClass {
+            /* Class selector */
+            background-color: aqua;
+        }
+
+        h2,
+        h4 {
+            /* Grouping selector */
+            text-align: center;
+        }
+
+        * {
+            /* Universal selector */
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Selectors in CSS</h3>
+    <span>
+        <h4>This is span element</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur excepturi molestiae vel!
+            Praesentium, totam magnam! Sed aspernatur blanditiis placeat amet deleniti voluptate, ad laboriosam nulla
+            soluta aperiam eveniet perspiciatis.</p>
+    </span>
+    <div>
+        <p id="paraId" class="paraClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolores nulla
+            obcaecati saepe iusto quam tempore temporibus, neque molestias magni ipsum aliquam doloremque magnam porro
+            assumenda, harum, nihil deserunt reiciendis.</p>
+
+        <p class="paraClass">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, laboriosam sit
+            necessitatibus accusantium ducimus sed autem libero dolores fugiat iusto quos temporibus, laborum cumque
+            deserunt cum nesciunt quia inventore praesentium culpa sequi nostrum eum. Esse commodi repellendus
+            consequatur quos aliquam?</p>
+
+        <p class="paraClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus dolorem qui ipsa
+            debitis unde quidem, nisi obcaecati dignissimos? Labore voluptas quam similique porro asperiores placeat
+            consequatur amet eius omnis.</p>
+    </div>
+</body>
+
+</html>

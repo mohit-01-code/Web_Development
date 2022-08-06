@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Wonder</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        header {
+            background-image: url('26_fitness walpaper.jpg');
+            background-size: 1330px 950px;
+
+        }
+
+        nav {
+            height: 80px;
+            padding: 30px 12px;
+        }
+
+        .nav {
+            list-style: none;
+            color: white;
+            float: left;
+            margin: 5px 17px;
+        }
+
+        #nav1 {
+            margin-left: 80px;
+            margin-right: 150px;
+            border: 2px solid #9fbb7a;
+            padding: 7px 25px;
+            border-radius: 13px;
+            color: #9fbb7a;
+            background-color: black;
+        }
+
+        section {
+            width: 800px;
+            color: white;
+            padding: 25px 45px;
+            margin: 50px 100px;
+            height: 700px;
+        }
+
+        h2 {
+            font-size: 56px;
+            margin: 12px;
+        }
+
+        .detailPara,
+        form {
+            clear: left;
+        }
+
+        .formInputDiv {
+            margin: 20px 0px;
+        }
+
+        .formInputTag {
+            display: block;
+            background-color: #dafbd6e6;
+            height: 27px;
+            width: 240px;
+            border-radius: 7px;
+            margin: 4px 3px;
+
+        }
+
+        #inputDiv1 {
+            margin-top: 0px;
+        }
+
+        #submitInput {
+            width: 80px;
+            background-color: #fcffeb;
+            border: 2px solid #edcccc;
+            color: #000000;
+            height: 25px;
+            box-sizing: content-box;
+            padding: 2px 8px;
+            float: right;
+            margin: 0px 10px;
+        }
+
+        #submitInput:hover {
+            background-color: black;
+            border: 2px solid #008000;
+            color: #04ef04;
+            cursor: pointer;
+        }
+
+        summary {
+            border: 1px solid red;
+            display: inline;
+            float: left;
+            margin: 25px 50px;
+            padding: 7px 20px;
+            background-color: black;
+            border: 2px solid green;
+            color: #04ef04;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .formQuote {
+            background-image: url('26_fitness form background.jpg');
+            width: 350px;
+            height: 400px;
+            clear: left;
+            float: left;
+            background-size: 350px 400px;
+        }
+
+        .form {
+            float: left;
+            margin-left: 0px;
+        }
+
+        summary:hover {
+            cursor: pointer;
+        }
+
+        .footerImgDiv {
+            margin-top: 0px;
+        }
+
+        .footerImg {
+            width: 222px;
+            height: 222px;
+        }
+
+        footer {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="nav" id="nav1">FITNESS GYM</li>
+                <li class="nav" id="nav2">HOME</li>
+                <li class="nav" id="nav3">PAGES</li>
+                <li class="nav" id="nav4">MEGA MENU</li>
+                <li class="nav" id="nav5">ABOUT US</li>
+                <li class="nav" id="nav6">NEWS</li>
+                <li class="nav" id="nav7">CONTACT</li>
+                <li class="nav" id="nav8">CALL: +34 586 778 8892</li>
+            </ul>
+        </nav>
+        <section>
+            <div>
+                <h2>Fitness Wonder</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt mollitia quod. Dignissimos
+                    officiis hic, veritatis exercitationem laborum molestiae, recusandae quae eum perferendis mollitia
+                    molestias numquam enim soluta inventore! Consectetur hic suscipit iure! Qui mollitia sed provident?
+                    Placeat, illum dolore explicabo voluptas dolor iusto earum!</p>
+
+            </div>
+            <article>
+                <details>
+                    <summary>Read More</summary>
+                    <p class="detailPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum
+                        eligendi tenetur
+                        provident nam
+                        dolorem eius nostrum placeat laborum nemo accusantium, id ducimus cum vel, ea quibusdam eos
+                        aperiam?
+                        Adipisci natus voluptates voluptatum inventore repellat? Consequatur provident ex expedita
+                        perspiciatis!
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Apply Now</summary>
+                    <div class="formQuote">
+                        <h2>Bring your fitness along</h2>
+                        <h3>Try wonder Fitness</h3>
+                    </div>
+                    <div class="form">
+
+                        <form action="registration.php">
+                            <div id="inputDiv1" class="formInputDiv">Full Name: <input class="formInputTag" type="text">
+                            </div>
+                            <div class="formInputDiv">Age: <input class="formInputTag" type="number"></div>
+                            <div class="formInputDiv">Gender:
+                                <div>
+                                    <input type="radio" name="gender">Male <input type="radio" name="gender">Female
+                                    <input type="radio" name="gender">Others
+                                </div>
+                            </div>
+                            <div class="formInputDiv">Email id: <input class="formInputTag" type="email" name="Email id"
+                                    placeholder="gbc@gmail.com"></div>
+                            <div class="formInputDiv">Contact: <input class="formInputTag" type="tel" name="Mob.No."
+                                    placeholder="+91 9918641250">
+                            </div>
+                            <div class="formInputDiv">Address: <input class="formInputTag" type="text"></div>
+                            <div class="formInputDiv"><input id="submitInput" class="formInputTag" type="submit"
+                                    value="Submit"></div>
+
+                        </form>
+                    </div>
+                </details>
+            </article>
+        </section>
+    </header>
+    <footer>
+        <div class="footerImgDiv">
+            <img class="footerImg"
+                src="https://media.istockphoto.com/photos/holding-weight-and-sitting-picture-id1277242852?b=1&k=20&m=1277242852&s=170667a&w=0&h=JRJsVDFKO_i9omBAMNySqCfwvRTB-yeVrjJY2jd7JZw="
+                alt="img1"><img class="footerImg"
+                src="https://media.istockphoto.com/photos/cheerful-fit-couple-on-white-background-picture-id1287910461?b=1&k=20&m=1287910461&s=170667a&w=0&h=A4HaJr7JSonN79ACVIjM-dP1WEHocwfPnKR95C0PzMQ="
+                alt="img1"><img class="footerImg"
+                src="https://media.istockphoto.com/photos/you-are-strong-strong-is-you-picture-id1288737452?b=1&k=20&m=1288737452&s=170667a&w=0&h=NIGqhjD9Nlp92PM3ORBr6wft1o-1h33ti7OaXmFan84="
+                alt="img3"><img class="footerImg"
+                src="https://media.istockphoto.com/photos/shot-of-two-women-taking-a-selfie-while-out-for-a-run-together-picture-id1313649143?b=1&k=20&m=1313649143&s=170667a&w=0&h=i0tlfPIvyz2P_Ub__UuRO-NujZ3Kw4ijohUgT3vgafw="
+                alt="img4"><img class="footerImg"
+                src="https://media.istockphoto.com/photos/portrait-of-female-biker-smiling-for-camera-in-public-park-picture-id1270401890?b=1&k=20&m=1270401890&s=170667a&w=0&h=reGiOec2FpRGg5eHs0qRqwBO9aZuMrHxAP4djcQZWq0="
+                alt="img5"><img class="footerImg"
+                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zml0bmVzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="img6"><img class="footerImg"
+                src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZpdG5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="img7"><img class="footerImg"
+                src="https://images.unsplash.com/photo-1627483298606-cf54c61779a9?ixid=MnwxMjA3fDF8MHxzZWFyY2h8MTV8fGZpdG5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="img8"><img class="footerImg"
+                src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZpdG5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="img9"><img class="footerImg"
+                src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZpdG5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="img10">
+        </div>
+    </footer>
+</body>
+
+</html>

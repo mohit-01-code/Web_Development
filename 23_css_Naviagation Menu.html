@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(/06_html_thartharleftrearthreequarter.jpg);
+            background-size: 100%;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: #303030;
+            margin: 2px;
+            box-sizing: border-box;
+        }
+
+        #nav {
+            overflow: auto;
+            margin: 0px;
+
+        }
+
+        .nav {
+            float: left;
+            list-style: none;
+            border: 1px solid black;
+            background-color: #d5e2ed;
+            margin: 12px 52px;
+            padding: 3px 9px;
+            border-radius: 5px;
+        }
+
+        #nav5 {
+            float: right;
+            padding: 0px;
+
+        }
+
+        #nav5 input {
+            margin: 0px;
+            width: 230px;
+            height: 24px;
+            border-radius: 4px;
+        }
+
+        #nav0 {
+            background-color: #303030;
+            border: none;
+            height: 40px;
+            width: 40px;
+            padding: 2px 2px;
+            margin: 2px;
+            box-sizing: content-box;
+
+        }
+
+        #nav0 img {
+            height: 40px;
+            width: 40px;
+            padding: 1px 1px;
+            border-radius: 50%;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul id="nav">
+                <li class="nav" id="nav0">
+                    <img src="https://lh3.googleusercontent.com/ogw/ADea4I4t3S0tkVgxnZorV5MgEDd-Z0xPPoGHMNJznFGQ0w=s83-c-mo"
+                        alt="logo">
+                </li>
+                <li class="nav" id="nav1">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav" id="nav2">
+                    <a href="#">Images</a>
+                </li>
+                <li class="nav" id="nav3">
+                    <a href="#">Contact us</a>
+                </li>
+                <li class="nav" id="nav4">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav" id="nav5">
+                    <input type="text" placeholder="Search this website">
+                </li>
+            </ul>
+        </div>
+    </header>
+</body>
+
+</html>
